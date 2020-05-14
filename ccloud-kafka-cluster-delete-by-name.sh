@@ -15,6 +15,6 @@ printf "Delete Plan:\n\n%s\n\n" "$DELETEPLAN"
 read -p "Are you sure you want to delete $PLANCOUNT clusters? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-    # do dangerous stuff
-    eval $DELETEPLAN
+  # do dangerous stuff
+  eval $DELETEPLAN
 fi
